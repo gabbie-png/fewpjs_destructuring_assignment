@@ -1,6 +1,15 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+const [bessie, ,  dolly, babe, little] = farmAnimals.split(' ')
+// we put an extra comma to hold the space for bolt the horse
+const [blackAndWhite, , black, pink, ] = farmAnimals.split(' ')
+
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+const [r, o, y, g, b, i, v] = colors;
+const [, , , , , indg, ] = colors;
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +18,7 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const {muppetName, color, song, partner, job} = muppet
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +34,9 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob, nestedPartner} = nestedMuppet;
 
 // Strings
 
