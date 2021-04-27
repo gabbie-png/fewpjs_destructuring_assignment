@@ -35,6 +35,7 @@ const nestedMuppet = {
   nestedPartner: 'Miss Piggy'
 };
 
+
 const {song2, song4} = nestedMuppet.album.theMuppetMovie;
 const {nestedJob, nestedPartner} = nestedMuppet;
 
